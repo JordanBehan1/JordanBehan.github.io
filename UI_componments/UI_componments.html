@@ -1,0 +1,63 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>GameLoop Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="HTML5 GameLoop Template">
+    <meta name="author" content="UI Programming">
+	 <link rel="stylesheet" href="./css/push.css">
+
+    <!--StyleSheet-->
+    <link rel="stylesheet" href="./css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+ <h1 id="HUD" onload="weaponSelection()"></h1>
+    <canvas tabindex="1" id="game" width="800" height="800" style="border: black 1px solid;"
+	<!--id="the_canvas" width="800" height="800" style="border: black 1px solid;">-->
+        Oops! looks like your browser does not support canvas tag
+    </canvas>
+	 <table>
+        <tbody>
+            <tr>
+                <td>&nbsp;</td>
+                <td><button onmousedown="buttonOnClickUp()" class="button yellow round">Y</button></td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td><button onmousedown="buttonOnClickRight()" class="button blue round">X</button></td>
+                <td>&nbsp;</td>
+                <td><button onmousedown="buttonOnClickLeft()" class="button red round">B</button></td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td><button onmousedown="buttonOnClickDown()" class="button green round">A</button></td>
+                <td>&nbsp;</td>
+            </tr>
+        </tbody>
+    </table>
+	 <td colspan="3" align="right">
+          <div class="custom-select" style="width:200px;">
+            <select id="equipment" onchange="weaponSelection()","draw()">
+            </select>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3" align="right">
+          <label class="switch">
+            <input id="active" onclick="weaponSelection()" type="checkbox">
+            <span class="toggle"></span>
+          </label>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+    <!--JavaScript File-->
+	<script src="./js/script.js"></script>
+</html>
