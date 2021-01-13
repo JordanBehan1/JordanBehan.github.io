@@ -3,7 +3,7 @@ var canvas = document.getElementById("game");
 var context = canvas.getContext("2d");
 
 var image = new Image();
-image.src = "./knightImages/knightSheet.png";
+image.src = "./knightImages/knightSheet.PNG";
 var background= new Image();
 background.src ="./knightImages/caveBackground.png"
 
